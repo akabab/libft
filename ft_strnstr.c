@@ -6,12 +6,12 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/26 17:07:54 by ycribier          #+#    #+#             */
-/*   Updated: 2013/11/26 19:00:19 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:31:45 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strnstr(char const *str, char const *to_find, size_t n)
 {

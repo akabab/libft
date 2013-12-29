@@ -6,12 +6,12 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/29 14:29:02 by ycribier          #+#    #+#             */
-/*   Updated: 2013/12/20 20:04:20 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:30:16 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
+#include "libft.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

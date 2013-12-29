@@ -6,12 +6,12 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/27 18:18:52 by ycribier          #+#    #+#             */
-/*   Updated: 2013/12/01 13:49:31 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:32:06 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strtrim(char const *s)
 {

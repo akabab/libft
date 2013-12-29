@@ -6,11 +6,11 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 11:13:32 by ycribier          #+#    #+#             */
-/*   Updated: 2013/12/29 19:25:43 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:28:50 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putstr_fd(char const *s, int fd)
 {
@@ -20,5 +20,4 @@ void	ft_putstr_fd(char const *s, int fd)
 	while (s[len])
 		len++;
 	write(fd, s, len);
-
 }

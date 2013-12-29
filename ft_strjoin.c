@@ -6,13 +6,13 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/26 19:13:36 by ycribier          #+#    #+#             */
-/*   Updated: 2013/11/27 18:18:21 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:30:52 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <string.h>
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

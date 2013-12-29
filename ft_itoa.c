@@ -6,12 +6,12 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/27 20:21:03 by ycribier          #+#    #+#             */
-/*   Updated: 2013/12/17 13:34:16 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:29:24 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_itoa(int n)
 {

@@ -6,9 +6,11 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:56:27 by ycribier          #+#    #+#             */
-/*   Updated: 2013/12/29 19:37:58 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:28:16 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 size_t	ft_strlen(const char *s)
 {

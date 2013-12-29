@@ -6,13 +6,13 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:56:52 by ycribier          #+#    #+#             */
-/*   Updated: 2013/11/22 10:58:09 by ycribier         ###   ########.fr       */
+/*   Updated: 2013/12/29 20:30:43 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strdup(char const *s1)
 {

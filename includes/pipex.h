@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/22 11:13:05 by ycribier          #+#    #+#             */
-/*   Updated: 2013/11/22 11:13:07 by ycribier         ###   ########.fr       */
+/*   Created: 2013/12/30 23:22:01 by ycribier          #+#    #+#             */
+/*   Updated: 2013/12/31 00:06:37 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef		PIPEX_H
+# define	PIPEX_H
 
-void	ft_putendl(char const *s)
+typedef struct		s_pipe
 {
-	while (*s)
-	{
-		ft_putchar(*s);
-		s++;
-	}
-	ft_putchar('\n');
-}
+	char	*file1;
+	char	*file2;
+	char	*cmd1;
+	char	*cmd2;
+	char	**args1;
+	char	**args2;
+	char	**env;
+}					t_pipe;
+
+
+/* DEBUG */
+void	dbg_chk_st_pipe(t_pipe *st_pipe);
+
+#endif	/* !PIPEX_H */

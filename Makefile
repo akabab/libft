@@ -122,7 +122,6 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "Delete" [ $(NAME) ] $(OK)
 
 re: fclean all
 

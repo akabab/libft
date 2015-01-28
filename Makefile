@@ -6,7 +6,7 @@
 #    By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/26 16:39:11 by ycribier          #+#    #+#              #
-#    Updated: 2014/03/17 12:28:22 by ycribier         ###   ########.fr        #
+#    Updated: 2015/01/28 17:45:45 by ycribier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,6 @@ SRCS	=	ft_memset.c					\
 			degree_radian.c				\
 			ft_nbrlen.c					\
 			ft_perror.c					\
-			get_next_line.c				\
 			free.c						\
 			dlist.c						\
 			dlist_node.c				\

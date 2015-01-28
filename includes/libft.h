@@ -6,7 +6,7 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 20:09:01 by ycribier          #+#    #+#             */
-/*   Updated: 2015/01/28 19:05:10 by ycribier         ###   ########.fr       */
+/*   Updated: 2015/01/28 19:24:38 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,13 @@ typedef enum		e_bool
 	FALSE,
 	TRUE
 }					t_bool;
+
+/*
+**	Get_next_line
+*/
+# define BUFF_SIZE	4096
+
+int					get_next_line(int const fd, char **line);
 
 /*
 **	Printf

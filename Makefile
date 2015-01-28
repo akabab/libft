@@ -6,7 +6,7 @@
 #    By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/26 16:39:11 by ycribier          #+#    #+#              #
-#    Updated: 2015/01/28 17:45:45 by ycribier         ###   ########.fr        #
+#    Updated: 2015/01/28 19:25:05 by ycribier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,7 +90,8 @@ SRCS	=	ft_memset.c					\
 			htable_rm.c					\
 			hft.c						\
 			ft_printf.c					\
-			dec_oct.c
+			dec_oct.c					\
+			get_next_line.c
 OBJS	=	$(SRCS:.c=.o)
 
 # COLORS

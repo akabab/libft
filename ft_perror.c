@@ -6,7 +6,7 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/31 15:58:53 by ycribier          #+#    #+#             */
-/*   Updated: 2015/02/19 18:04:50 by ycribier         ###   ########.fr       */
+/*   Updated: 2015/02/19 18:06:48 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 void	ft_perror(const char *msg)
 {
-	extern const int			errno;
-	extern const char const		*sys_errlist[];
+	extern const int		errno;
+	extern const char		*sys_errlist[];
 
 	if (msg)
 	{

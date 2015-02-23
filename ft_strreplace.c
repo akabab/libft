@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_perror.c                                        :+:      :+:    :+:   */
+/*   ft_strreplace.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/12/31 15:58:53 by ycribier          #+#    #+#             */
-/*   Updated: 2015/02/19 18:09:59 by ycribier         ###   ########.fr       */
+/*   Created: 2015/02/23 16:22:18 by ycribier          #+#    #+#             */
+/*   Updated: 2015/02/23 16:22:24 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
 #include "libft.h"
 
-void	ft_perror(const char *msg)
+char			*ft_strreplace(char *src, char *from, char *to)
 {
-	extern const int		errno;
-	extern const char		*sys_errlist[];
+	char		*f;
+	char		*str;
+	size_t		len1;
+	size_t		len2;
 
-	if (msg)
+	str = NULL;
+	if ((f = strstr(src, from)))
 	{
-		ft_putstr_fd(msg, 2);
-		ft_putstr_fd(": ", 2);
+		len1 = f - src;
+		len2 = ft_strlen(f + ft_strlen(from));
+		str = ft_memalloc(sizeof(char) * (len1 + ft_strlen(to) + len2 + 1));
+		if (str)
+		{
+			str = ft_strncpy(str, src, len1);
+			str = ft_strcat(str, to);
+			str = ft_strcat(str, f + ft_strlen(from));
+		}
 	}
-	ft_putendl_fd(sys_errlist[errno], 2);
-}
-
-void	error_msg(char *message)
-{
-	if (message)
-		ft_putendl_fd(message, 2);
-}
-
-void	error_msg_exit(char *message)
-{
-	error_msg(message);
-	exit(-1);
+	return (str);
 }

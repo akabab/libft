@@ -6,7 +6,7 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/07 15:23:56 by ycribier          #+#    #+#             */
-/*   Updated: 2014/02/19 18:28:01 by ycribier         ###   ########.fr       */
+/*   Updated: 2015/02/23 18:16:03 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,15 @@ void	dlist_push_front(t_dlist *dlist, void *value)
 {
 	t_dlist_node		*node;
 
-	node = malloc(sizeof(t_dlist_node));
+	node = ft_memalloc(sizeof(t_dlist_node));
 	if (!node)
 	{
 		ft_perror(NULL);
 		return ;
 	}
 	node->value = value;
+	node->prev = NULL;
+	node->next = NULL;
 	if (dlist->first == NULL)
 	{
 		dlist->first = node;

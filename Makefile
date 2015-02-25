@@ -6,7 +6,7 @@
 #    By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/26 16:39:11 by ycribier          #+#    #+#              #
-#    Updated: 2015/02/23 16:23:19 by ycribier         ###   ########.fr        #
+#    Updated: 2015/02/25 14:41:19 by ycribier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS	=	ft_memset.c					\
 			ft_toupper.c				\
 			ft_tolower.c				\
 			ft_str_isdigit.c			\
+			ft_str_isint.c				\
 			ft_memalloc.c				\
 			ft_memdel.c					\
 			ft_strnew.c					\

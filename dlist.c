@@ -6,7 +6,7 @@
 /*   By: ycribier <ycribier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/07 12:19:31 by ycribier          #+#    #+#             */
-/*   Updated: 2015/03/04 17:09:41 by ycribier         ###   ########.fr       */
+/*   Updated: 2015/03/04 17:11:57 by ycribier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_dlist		*dlist_create(void)
 
 	if (!(dlist = ft_memalloc(sizeof(t_dlist))))
 	{
-		perror(NULL);
+		ft_perror(NULL);
 		return (NULL);
 	}
 	return (dlist);

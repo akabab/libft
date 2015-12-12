@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC		=	gcc -O2 $(FLAGS)
+CC		=	gcc $(FLAGS)
 FLAGS	=	-Wall -Wextra -Werror
 NAME	=	libft.a
 INCLUDES=	./includes
